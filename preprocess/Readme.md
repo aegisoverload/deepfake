@@ -1,5 +1,6 @@
 
 *frame* - turn a directory of videos into directory of frames
+
 *extract* - extract a directory of frames into faces with given size 
 
 ### frame.py
