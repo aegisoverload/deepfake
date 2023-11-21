@@ -1,12 +1,6 @@
 import os
 import cv2
 import argparse
-import mediapipe as mp
-import numpy as np
-import math
-from typing import Tuple, Union
-from mediapipe.tasks import python
-from mediapipe.tasks.python import vision
 
 '''
 turn video into frames
