@@ -5,7 +5,7 @@
 
 ### frame.py
 ``` bash
-python3 -u frame.py --vdir {input video directory} --fdir {output directory of frames} --skip {skip how many frames, default=50}
+python3 -u frame.py --vdir {input video directory} --fdir {output directory of frames} --skip {skip how many frames, default=120}
 ```
 
 ### extract.py
