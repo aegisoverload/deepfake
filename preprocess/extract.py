@@ -28,7 +28,7 @@ def main():
     parser.add_argument('--fdir', type=str, required=True)
     parser.add_argument('--pdir', type=str, required=True)
     parser.add_argument('--size', type=int, default=192)
-    parser.add_argument('--real', type=int, default=0)
+    parser.add_argument('--real', type=int, default=1)
 
     args = parser.parse_args()
 
