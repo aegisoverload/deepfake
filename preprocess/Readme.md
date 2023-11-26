@@ -10,5 +10,5 @@ python3 -u frame.py --vdir {input video directory} --fdir {output directory of f
 
 ### extract.py
 ``` bash
-python3 -u extract.py --fdir {input frame directory} --pdir {output of faces} --size {image of face = size*size, default=192} --rf {real:{0} or fake{1}}
+python3 -u extract.py --fdir {input frame directory} --pdir {output of faces} --size {image of face = size*size, default=192} --rf {0(real) or 1(fake), default=0}
 ```
