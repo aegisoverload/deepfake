@@ -10,7 +10,7 @@ def main():
 
     parser.add_argument('--vdir', type=str, required=True)
     parser.add_argument('--fdir', type=str, required=True)
-    parser.add_argument('--skip', type=int, default=50)
+    parser.add_argument('--skip', type=int, default=120)
 
     args = parser.parse_args()
 

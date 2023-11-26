@@ -28,11 +28,13 @@ def main():
     parser.add_argument('--fdir', type=str, required=True)
     parser.add_argument('--pdir', type=str, required=True)
     parser.add_argument('--size', type=int, default=192)
+    parser.add_argument('--real', type=int, default=0)
 
     args = parser.parse_args()
 
     fdir = args.fdir
     pdir = args.pdir
+    rf = args.real
     
 
     # face detector
@@ -40,6 +42,7 @@ def main():
     options = vision.FaceDetectorOptions(base_options=base_options)
     detector = vision.FaceDetector.create_from_options(options)
     
+    index = 0
     for filename in os.listdir(fdir):
         if filename.endswith(('.jpg')):
             path = os.path.join(fdir, filename)
@@ -66,7 +69,8 @@ def main():
             resized_faces = [cv2.resize(face, size) for face in faces]
 
             if len(resized_faces) == 1:
-                processed_filename = os.path.join(pdir, f"{name}.jpg")
+                processed_filename = os.path.join(pdir, f"{rf}_frame_{index}.jpg")
+                index += 1
                 cv2.imwrite(processed_filename, resized_faces[0])
 
                 
