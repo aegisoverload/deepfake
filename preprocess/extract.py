@@ -69,7 +69,7 @@ def main():
             resized_faces = [cv2.resize(face, size) for face in faces]
 
             if len(resized_faces) == 1:
-                processed_filename = os.path.join(pdir, f"{rf}_frame_{index}.jpg")
+                processed_filename = os.path.join(pdir, f"{rf}_{name}.jpg")
                 index += 1
                 cv2.imwrite(processed_filename, resized_faces[0])
 
