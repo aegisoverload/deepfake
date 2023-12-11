@@ -25,6 +25,11 @@ import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 
+
+# ------------------ READ ME ------------------ #
+
+# save the model as "./best.ckpt" 
+
 # ======= CHANGE FILE NAME HERE AND RUN ======= #
 # MAKE SURE TO USE .jpg FILE
 file_name = "./real1.jpg"
