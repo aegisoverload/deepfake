@@ -1,4 +1,4 @@
-
+##trying to improve our model
 *myft.py* - apply ft to a directory of images, store it to another directory 
 
 *svm.py* - svm, and save model 'svm_model'
