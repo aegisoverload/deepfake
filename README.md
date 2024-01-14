@@ -40,7 +40,8 @@ Downloading the file in ~/model/deep_fake_CNN.ipynb, and simply use run all on g
 ## How to use the model
 
 A save of the best model (.ckpt file) will be saved after training.
-In ~/detect/detect_deep_fake.py change the file path and model path at the top of the code. It take an image and prints the prediction of the model.
+
+In ~/detect/detect_deep_fake.py, change the file path and model path at the top of the code. It takes an image and prints the prediction of the model.
 
 ### If you are not running on colab, you might need to install the following packages
 
@@ -53,7 +54,7 @@ pip install tqdm
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip install -U matplotlib
 ```
-
+Note that the first two code blocks in ~/model/deep_fake_CNN.ipynb are for google colab, you need to delte them if you'r not running on colab.
 
 ### References
 https://github.com/EndlessSora/DeeperForensics-1.0
