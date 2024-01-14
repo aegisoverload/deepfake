@@ -1,6 +1,6 @@
 deepfake detection project (group 17)
 =
-## training part
+## About Our Work
 ### step 1: Preprocess our video dataset
 a sample video
 
@@ -29,9 +29,30 @@ try to get attention on our target, extract face from the frame and focus on the
 ![image](https://github.com/aegisoverload/deepfake/assets/125433863/c7dc0462-d3e5-46a7-9110-adbfae6080bf)
 ![image](https://github.com/aegisoverload/deepfake/assets/125433863/ba0ceeea-ac71-4873-9954-cdb4d8084c23)
 
-
+### Data distribution
 
 > ![image](https://github.com/aegisoverload/deepfake/assets/125433863/54ca19d6-7c6c-446a-b653-5afdded3e6d6)
+
+## How to train it your self?
+
+Downloading the file in ~/model/deep_fake_CNN.ipynb, and simply use run all on google colab.
+
+## How to use the model
+
+A save of the best model (.ckpt file) will be saved after training.
+In ~/detect/detect_deep_fake.py change the file path and model path at the top of the code. It take an image and prints the prediction of the model.
+
+### If you are not running on colab, you might need to install the following packages
+
+```bash
+pip install numpy
+pip install pillow
+pip install opencv-python
+pip install mediapipe
+pip install tqdm
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install -U matplotlib
+```
 
 
 ### References
